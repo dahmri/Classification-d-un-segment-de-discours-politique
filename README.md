@@ -7,9 +7,9 @@ Les données que nous utilisons proviennent de : https://deft.limsi.fr/, ce jeu 
 # Modèle
 
 CNN mono couche avec les hyperparamètres suivants :   
-*filter_sizes = 3
-*num_filters = 100
-*GlobalMaxPooling
+* filter_sizes = 3
+* num_filters = 100
+* GlobalMaxPooling
 embedding_dim = 100
 Dropout= 0.3
 
