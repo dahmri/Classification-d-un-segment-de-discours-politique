@@ -17,8 +17,7 @@ def clean(string):
 
 def load_sentences_and_labels():
     """
-    Loading Data from text files
-    and creating labels
+    Loading Data from text files and creating labels
     """
 
     print ("load_data_and_labels")
@@ -77,6 +76,9 @@ def build_sequences(sentences,vocabulary):
 
 
 def load_data():
+    """
+    Loading the data and creating labels and vocabulary
+    """
 
     sentences, labels = load_sentences_and_labels()
     vocabulary = build_vocabulary(sentences)
