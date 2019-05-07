@@ -1,16 +1,18 @@
+import findspark
+findspark.init()
 from preprocessing import load_data
 import itertools
-import pandas as pd
 import collections
 import numpy as np
-from gensim.models import word2vec, KeyedVectors
+from gensim.models import KeyedVectors
 from keras.callbacks import EarlyStopping, ModelCheckpoint
-from keras.models import Sequential, Model
-from keras.layers import Dense, Dropout, Flatten, Input, MaxPooling1D, Convolution1D, Embedding,GlobalMaxPooling1D,LSTM, MaxPooling1D
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Convolution1D, Embedding,GlobalMaxPooling1D
+import matplotlib
+matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt
-from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score, classification_report,roc_curve
+from sklearn.metrics import confusion_matrix, roc_auc_score, classification_report,roc_curve
 np.random.seed(0)
-
 
 
 def get_word2vec(vocabulary):
