@@ -62,7 +62,7 @@ def build_vocabulary(sentences):
     liste_words.append('PAD')
 
     # Mapping from word to index
-    vocabulary = {x: i for i, x in enumerate(liste_words)}
+    vocabulary = {word: index for index, word in enumerate(liste_words)}
     return vocabulary
 
 
